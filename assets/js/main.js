@@ -8,10 +8,10 @@ function MiembroSquad (fullname, age, hobby1, hobby2, hobby3){
 	//this.hobbies = hobbies
 	//this.hobbies = hobby1+hobby2+hobby3
 	this.mostrarMiembro = function(){
-		document.getElementById("squadMember").innerHTML += ("<b> Nombre: </b>" + this.fullname + "<br><b> Edad: </b>" + this.age + "<br><b> Hobbies: </b>" + "<ul><li>"+ this.hobby1 + "</li>" + "<li>"+ this.hobby2 +  "</li>" + "<li>"+ this.hobby3 + "</li>" + "</ul>" + "<br>");
+		document.getElementById("squadMember").innerHTML += ("<div><b> Nombre: </b>" + this.fullname + "<br><b> Edad: </b>" + this.age + "<br><b> Hobbies: </b>" + "<ul><li>"+ this.hobby1 + "</li>" + "<li>"+ this.hobby2 +  "</li>" + "<li>"+ this.hobby3 + "</li>" + "</ul>" + "<br>" + "</div>");
 	}
 }
-
+	
 const PauLee = new MiembroSquad("Paulee Reds", 18, "Soñar despierta", "Comer un rico", "Que me hagan masajes")
 PauLee.mostrarMiembro();
 
