@@ -1,18 +1,14 @@
 function MiembroSquad (fullname, age, hobbies){
 	this.fullname = fullname
 	this.age = age
-<<<<<<< HEAD
-=======
 	//this.hobby1 = hobby1
 	//this.hobby2 = hobby2
 	//this.hobby3 = hobby3
->>>>>>> 3d44fd6f422ad5e4141e814ee64c50784f9c88fc
 	this.hobbies = hobbies
 	//this.hobbies = hobby1+hobby2+hobby3
 	/*this.mostrarMiembro = function(){
 		document.getElementById("squadMember").innerHTML += ("<div><b> Nombre: </b>" + this.fullname + "<br><b> Edad: </b>" + this.age + "<br><b> Hobbies: </b>" + "<ul><li>"+ this.hobby1 + "</li>" + "<li>"+ this.hobby2 +  "</li>" + "<li>"+ this.hobby3 + "</li>" + "</ul>" + "<br>" + "</div>");
 	}*/
-<<<<<<< HEAD
 }
 
 function Comentario(id_miembro, comentario, likes){
@@ -29,10 +25,6 @@ function Comentario(id_miembro, comentario, likes){
   document.body.appendChild(boton);
 }*/
 
-=======
-}
-
->>>>>>> 3d44fd6f422ad5e4141e814ee64c50784f9c88fc
 function principal(){
 	var members = [];
 	var pauLee = new MiembroSquad("Paulee Reds", 18, ["Soñar despierta", "Comer un rico", "Que me hagan masajes"])
@@ -61,7 +53,6 @@ function principal(){
 	members.push(ale);
 	members.push(pauli);
 
-<<<<<<< HEAD
 	members.forEach(function (el, i){
     var contenedor = document.getElementById('squadMember');
     squadMember.innerHTML += "<div><b> Nombre: </b>" + el.fullname + "<br><b> Edad: </b>" + el.age + " años <br>" + "<b> Hobbies: </b>"+ "<ul><li>" + el.hobbies[0] + "</li><li>" +
@@ -122,21 +113,9 @@ function principal(){
 	/*for(var i = 0; i< members.length; i++){
   		var contenedor = document.getElementById("squadMember");
     	contenedor.innerHTML += "<div id='m"+i+"'><b>Nombre: </b>" + members[i].fullname + " " + "<br><b>Edad: </b>" + members[i].age + " años <br>" + "<b>Hobbies: </b><ul><li>" + members[i].hobbies[0] + "</li><li>" + members[i].hobbies[1] + "</li><li>" + members[i].hobbies[2] + "</li></ul><textarea id='comentarios-m"+i+"' row='30' col='10'/> </textarea></div>";
-	}
+	}*/
 	
-	return members;	*/
-=======
-
-	members.forEach(function (el){
-    var contenedor = document.getElementById("squadMember");
-    squadMember.innerHTML += "<div><b> Nombre: </b>" + el.fullname + "<br><b> Edad: </b>" + el.age + " años <br>" + "<b> Hobbies: </b>"+ "<ul><li>" + el.hobbies[0] + "</li><li>" +
-    el.hobbies[1] + "</li><li>" + el.hobbies[2] + "</li></ul></div><br>";
-  	});
-
-	return members;
-}
->>>>>>> 3d44fd6f422ad5e4141e814ee64c50784f9c88fc
-
+	
 principal();
 
 
